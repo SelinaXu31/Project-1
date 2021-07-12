@@ -1,7 +1,7 @@
 FROM python:3
 
-ADD src /src
+ADD . .
 
-RUN pip install --upgrade pip
+RUN python -m pip install --user numpy scipy
 
-CMD [ "python", "./src/StatisticsTests.py" ]
+CMD ["python", "-m", "unittest", "discover", "-s", "/Tests"]
