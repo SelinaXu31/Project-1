@@ -1,12 +1,12 @@
 from Calculator.Addition import addition
 from Calculator.Division import division
-from Statistics.Numbers import numbers
+from Statistics.Numbers import random_numbers
 
 
-def mean(data, data_size):
+def mean(n):
     total = 0
-    list_numbers = numbers(data, data_size)
-    length = len(list_numbers)
+    list_numbers = random_numbers(n)
+    length = len(list_numbers(n))
     for num in list_numbers:
         total = addition(total, num)
     return division(length, total)
