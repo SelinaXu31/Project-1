@@ -1,13 +1,7 @@
-from Statistics.Numbers import random_numbers
-from Calculator.Division import division
-from Calculator.Subtraction import subtraction
-from Statistics.Mean import mean
+from Calculator.SquareRoot import squareroot
+from Statistics.Variance import variance
 
 
-def standard_deviation(data, data_size, ddof=0):
-    list_numbers = random_numbers(data, data_size)
-    length = len(list_numbers)
-    a = sum((x - mean) ** 2 for x in data)
-    b = subtraction(length, ddof)
-    r = division(b, a)
-    return r
+def standard_deviation(data):
+    var = variance(data)
+    return squareroot(var)

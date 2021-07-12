@@ -1,5 +1,5 @@
 from Calculator.Calculator import Calculator
-from Statistics.Numbers import random_numbers
+from Statistics.RandomNumbersGenerator import random_numbers
 from Statistics.Mean import mean
 from Statistics.Median import median
 from Statistics.Mode import mode
@@ -8,7 +8,7 @@ from Statistics.Variance import variance
 
 
 class Statistics(Calculator):
-    result = 0
+    data = []
 
     def __init__(self):
         self.data = random_numbers(n)
@@ -27,7 +27,7 @@ class Statistics(Calculator):
         return self.result
 
     def std_dev(self, data):
-        self.result = variance(self.data)
+        self.result = standard_deviation(self.data)
         return self.result
 
     def var(self, data):

@@ -1,5 +1,5 @@
 import unittest
-from Statistics.Numbers import random_numbers
+from Statistics.RandomNumbersGenerator import random_numbers
 from Statistics.Statistics import Statistics
 
 

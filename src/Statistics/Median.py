@@ -1,14 +1,19 @@
-from Statistics.Numbers import random_numbers
+from Calculator.Addition import addition
+from Calculator.Subtraction import subtraction
+from Calculator.Division import division
 
 
-class median(n):
-    list_numbers = random_numbers(n)
-    length = len(list_numbers)
-    list_numbers.sort()
+def median(data):
+    data.sort()
 
-    if length % 2 == 0:
-        median1 = list_numbers[length // 2]
-        median2 = list_numbers[length // 2 - 1]
-        median = (median1 + median2) / 2
+    num_Values = len(data)
+    index_Values = int(subtraction(1, num_Values))
+
+    mid_Num1 = int(division(2, index_Values))
+
+    if num_Values % 2 == 0:
+        mid_Num2 = int(addition(1, mid_Num1))
+        total = addition(data[mid_Num1], data[mid_Num2])
+        return division(2, total)
     else:
-        median = list_numbers[length // 2]
+        return data[mid_Num1]

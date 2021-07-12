@@ -1,15 +1,17 @@
-
-from Statistics.Numbers import numbers
-from collections import counter
+from collections import Counter
 
 
-def mode(data, data_size):
-    list_numbers = numbers(data, data_size)
-    length = len(list_numbers)
-    count = counter(list_numbers)
-    find_mode = [k for k, v in get_mode.items() if v == max(list(data.values()))]
-    if len(find_mode) == length:
-        get_mode = "No mode found"
+def mode(data):
+    mostfreq = Counter(data)
+    get_mode = dict(mostfreq)
+    r = [x for x, y in get_mode.items() if y == max(list(mostfreq.values()))]
+
+    num_Values = len(data)
+    num_Modes = len(r)
+
+    if num_Modes == num_Values:
+        return "No mode found"
+    elif num_Modes != 1:
+        return "Multiple modes found"
     else:
-        get_mode = "Mode is / are: " + ', '.join(map(str, find_mode))
-    return get_mode
+        return float(r[0])
