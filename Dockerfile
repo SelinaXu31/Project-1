@@ -1,7 +1,7 @@
-FROM python:3
+FROM python:3.7
 
 ADD . .
 
-RUN python -m pip install --user numpy scipy
+RUN pip install --upgrade pip
 
-CMD ["python", "-m", "unittest", "discover", "-s", "scr/Tests"]
+CMD ["python", "-m", "unittest", "discover", "-s","Tests"]
