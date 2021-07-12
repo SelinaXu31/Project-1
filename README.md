@@ -1,3 +1,5 @@
-# IS601 Project-1 with success test screenshot
+[![Build Status](https://www.travis-ci.com/SelinaXu31/Project-1.svg?branch=master)](https://www.travis-ci.com/SelinaXu31/Project-1)
 
-![alt text](https://github.com/SelinaXu31/Project-1/blob/master/src/Screenshot%20(4).png)
+# IS601 Project-2
+
+
