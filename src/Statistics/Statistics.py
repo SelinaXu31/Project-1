@@ -29,4 +29,3 @@ class Statistics(Calculator):
     def std_dev(self, data):
         self.result = variance(self.data)
         return self.result
-
