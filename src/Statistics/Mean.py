@@ -3,11 +3,10 @@ from Calculator.Division import division
 from Statistics.Numbers import numbers
 
 
-class mean (data,data_size):
-
+def mean(random_list):
     total = 0
-    a = numbers(data,data_size)
-    num_values = len(a)
+    a = numbers(random_list)
+    length= len(a)
     for num in a:
         total = addition(total,num)
-    return division (length,total)
+    return division(length,total)
