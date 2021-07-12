@@ -3,15 +3,15 @@
 # IS601 Project-2
 
 ## Calculator Function:
-Addition
-Subtraction
-Mutlpication
-Square
-Square Root
+* Addition
+* Subtraction
+* Mutlpication
+* Square
+* Square Root
 
 ## Statistics Calculator Function:
-Mean
-Mode
-Median
-Variance
-Standard Deviation
+* Mean
+* Mode
+* Median
+* Variance
+* Standard Deviation
