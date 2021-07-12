@@ -1,8 +1,8 @@
-from Statistics.Numbers import numbers
+from Statistics.Numbers import random_numbers
 
 
-class median(data, data_size):
-    list_numbers = numbers(data, data_size)
+class median(n):
+    list_numbers = random_numbers(n)
     length = len(list_numbers)
     list_numbers.sort()
 

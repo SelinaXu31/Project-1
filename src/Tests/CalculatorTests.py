@@ -51,5 +51,6 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(self.calculator.square_root(row['Value 1']), round(float(row['Result']), 8))
             self.assertEqual(self.calculator.result, round(float(row['Result']), 8))
 
+
 if __name__ == '__main__':
     unittest.main()

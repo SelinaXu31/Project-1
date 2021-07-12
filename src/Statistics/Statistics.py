@@ -23,9 +23,13 @@ class Statistics(Calculator):
         return self.result
 
     def median(self, data):
-        self.result = standard_deviation(self.data)
+        self.result = median(self.data)
         return self.result
 
     def std_dev(self, data):
+        self.result = variance(self.data)
+        return self.result
+
+    def var(self, data):
         self.result = variance(self.data)
         return self.result

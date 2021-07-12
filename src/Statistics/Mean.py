@@ -3,7 +3,7 @@ from Calculator.Division import division
 from Statistics.Numbers import random_numbers
 
 
-def mean(n):
+def mean(data):
     total = 0
     list_numbers = random_numbers(n)
     length = len(list_numbers(n))
