@@ -83,3 +83,7 @@ class MyTestCase(unittest.TestCase):
             answer = float(row['Standard_Deviation'])
             self.assertEqual(self.statistics.find_std_dev(data_slice), answer)
             self.assertEqual(self.statistics.result, float(row['Standard_Deviation']))
+         
+        
+if __name__ == '__main__':
+    unittest.main()
