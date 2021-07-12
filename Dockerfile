@@ -4,4 +4,4 @@ ADD src /src
 
 RUN pip install --upgrade pip
 
-CMD [ "python", "./src/CalculatorTests.py" ]
+CMD [ "python", "./src/StatisticsTests.py" ]
