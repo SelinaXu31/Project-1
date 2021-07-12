@@ -12,7 +12,35 @@ class MyTestCase(unittest.TestCase):
     def test_mean(self):
         test_data = random_numbers(n)
 
+        self.assertEqual(self.statistics.mean(test_data))
         self.assertEqual(self.statistics.result, )
+
+    def test_median(self):
+        test_data = random_numbers(n)
+
+        self.assertEqual(self.statistics.median(test_data))
+        self.assertEqual(self.statistics.result, )
+
+    def test_mode(self):
+        test_data = random_numbers(n)
+
+        self.assertEqual(self.statistics.mode(test_data))
+        self.assertEqual(self.statistics.result, )
+
+    def test_std_dev(self):
+        test_data = random_numbers(n)
+
+        self.assertEqual(self.statistics.sandard_deviation(test_data))
+        self.assertEqual(self.statistics.result, )
+
+    def test_var(self):
+        test_data = random_numbers(n)
+
+        self.assertEqual(self.statistics.sandard_deviation(test_data))
+        self.assertEqual(self.statistics.result, )
+
+    def test_results_property(self):
+        self.assertEqual(self.statistics.result, 0)
 
 
 if __name__ == '__main__':
