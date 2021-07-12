@@ -1,5 +1,6 @@
 import unittest
 from Statistics.Numbers import random_numbers
+from Statistics.Statistics import Statistics
 
 
 class MyTestCase(unittest.TestCase):
@@ -8,6 +9,9 @@ class MyTestCase(unittest.TestCase):
 
     def test_instantiate_calculator(self):
         self.assertIsInstance(self.statistics, Statistics)
+
+    def test_results_property(self):
+        self.assertEqual(self.calculator.result, 0)
 
     def test_mean(self):
         test_data = random_numbers(n)
